@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 body {
-  background: var(---background);
+  background: var(--background);
   -webkit-font-smoothing: antialiased;
 }
 `
