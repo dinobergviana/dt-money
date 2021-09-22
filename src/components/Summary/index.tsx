@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Container } from "./styles";
-import { TransactionsContext } from "../../TransactionsContext";
+import { useTransactions } from "../../hooks/useTransactions";
 
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
@@ -8,7 +8,7 @@ import totalImg from '../../assets/total.svg';
 
 export function Summary() {
 
-  const { transactions } = useContext(TransactionsContext);
+  const { transactions } = useTransactions();
 
   // acc = accumulator;
   // acc recebe o valor que é inicializado no terceiro parâmetro da função reduce;
